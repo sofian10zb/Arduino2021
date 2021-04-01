@@ -20,12 +20,12 @@ int num = 0;                      // definir variable del número a mostrar
 //********** Setup ****************************************************************
 void setup()
 {
-  for(int i = 0; i < ledNum; i++) // definir els pins 5, 6, 7 i 8 com sortides
+  for(int i = 0; i < ledNum; i++) // definir els pins 5, 6, 7, 8, 9, 10, 11, 12 com sortides
   {
     pinMode(ledPin[i], OUTPUT);
   }
   pinMode(buttonPin, INPUT);      // definir el pin 2 com una entrada
-  pinMode(buttonPin2, INPUT);      // definir el pin 2 com una entrada 
+  pinMode(buttonPin2, INPUT);      // definir el pin 3 com una entrada 
   for(int j = 0; j < ledNum ; j++)     // els leds mostren incialment 0
     { 
       digitalWrite(ledPin[j], 0);
