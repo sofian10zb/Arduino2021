@@ -9,14 +9,16 @@
 
 //********** Variables ************************************************************
 
-boolean buttonPin = 2;
+int buttonPin = 2;
+int buttonState;
 const int ledA = 5;       
 const int ledB = 6;          
 const int ledC = 7;          
 const int ledD = 8;     
 const int ledE = 9;    
 const int ledF = 10;     
-const int ledG = 11;        
+const int ledG = 11;   
+     
 const int temps = 1000;
 
 
@@ -36,7 +38,10 @@ void setup()
 //********** Loop *****************************************************************
 void loop()
 {
-  if (buttonPin == LOW)
+  buttonState = digitalRead(buttonPin);
+  
+  
+  if (buttonState == LOW)
 
   {
   
@@ -140,7 +145,11 @@ void loop()
   digitalWrite(ledE, HIGH);
 
     delay(temps);
-
+  }
+  else
+    {
+    delay(temps);
+    
   }
 }
 
