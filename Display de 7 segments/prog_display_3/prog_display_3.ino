@@ -43,7 +43,7 @@ void loop()
   buttonState = digitalRead(buttonPin);
   
   
-  if (buttonState == HIGH)
+  if (buttonState == LOW)
 
   {
     comptador = comptador + 1;
