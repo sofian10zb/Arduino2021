@@ -11,6 +11,7 @@
 
 int buttonPin = 2;
 int buttonState;
+int comptador ;
 const int ledA = 5;       
 const int ledB = 6;          
 const int ledC = 7;          
@@ -33,6 +34,7 @@ void setup()
   pinMode(ledF, OUTPUT);   
   pinMode(ledG, OUTPUT);   
   pinMode(buttonPin, INPUT);
+  comptador = 0;
 }
 
 //********** Loop *****************************************************************
@@ -41,10 +43,13 @@ void loop()
   buttonState = digitalRead(buttonPin);
   
   
-  if (buttonState == LOW)
+  if (buttonState == HIGH)
 
   {
-  
+    comptador = comptador + 1;
+  }
+    if (comptador == 0);
+    {
   digitalWrite(ledA, LOW);    
   digitalWrite(ledF, LOW);    
   digitalWrite(ledE, LOW);
@@ -52,9 +57,9 @@ void loop()
   digitalWrite(ledD, LOW);
   digitalWrite(ledB, LOW);
   digitalWrite(ledG, HIGH);
-  
-    delay(temps); 
-
+    }
+    if(comptador == 1);
+    {
   digitalWrite(ledA, HIGH);    
   digitalWrite(ledF, HIGH);    
   digitalWrite(ledE, HIGH);
@@ -62,9 +67,9 @@ void loop()
   digitalWrite(ledD, HIGH);
   digitalWrite(ledB, LOW);
   digitalWrite(ledG, HIGH);
-
-    delay(temps);
-
+    }
+    if(comptador == 2);
+    {
   digitalWrite(ledA, LOW);    
   digitalWrite(ledB, LOW);    
   digitalWrite(ledG, LOW);
@@ -72,10 +77,9 @@ void loop()
   digitalWrite(ledD, LOW);
   digitalWrite(ledC, HIGH);
   digitalWrite(ledF, HIGH);
-  
-    delay(temps);
-
-
+    }
+    if(comptador == 3);
+    {
   digitalWrite(ledA, LOW);    
   digitalWrite(ledB, LOW);    
   digitalWrite(ledC, LOW);
@@ -83,9 +87,9 @@ void loop()
   digitalWrite(ledD, LOW);
   digitalWrite(ledF, HIGH);
   digitalWrite(ledE, HIGH);
-
-    delay(temps);
-
+    }
+    if(comptador == 4);
+    {
   digitalWrite(ledF, LOW);    
   digitalWrite(ledB, LOW);    
   digitalWrite(ledG, LOW);
@@ -93,9 +97,9 @@ void loop()
   digitalWrite(ledA, HIGH);
   digitalWrite(ledE, HIGH);
   digitalWrite(ledD, HIGH);
-
-    delay(temps);
-
+    }
+    if(comptador == 5);
+    {
   digitalWrite(ledA, LOW);    
   digitalWrite(ledF, LOW);    
   digitalWrite(ledG, LOW);
@@ -103,9 +107,9 @@ void loop()
   digitalWrite(ledD, LOW);
   digitalWrite(ledB, HIGH);
   digitalWrite(ledE, HIGH);
-
-    delay(temps);
-
+    }
+    if(comptador == 6);
+    {
   digitalWrite(ledF, LOW);    
   digitalWrite(ledG, LOW);    
   digitalWrite(ledE, LOW);
@@ -113,9 +117,9 @@ void loop()
   digitalWrite(ledD, LOW);
   digitalWrite(ledB, HIGH);
   digitalWrite(ledA, HIGH);
-
-    delay(temps);
-
+    }
+    if(comptador == 7);
+    {
   digitalWrite(ledA, LOW);    
   digitalWrite(ledB, LOW);    
   digitalWrite(ledC, LOW);
@@ -123,9 +127,9 @@ void loop()
   digitalWrite(ledE, HIGH);
   digitalWrite(ledG, HIGH);
   digitalWrite(ledD, HIGH);
-
-    delay(temps);
-
+    }
+    if(comptador == 8);
+    {
   digitalWrite(ledF, LOW);    
   digitalWrite(ledG, LOW);    
   digitalWrite(ledE, LOW);
@@ -133,9 +137,9 @@ void loop()
   digitalWrite(ledD, LOW);
   digitalWrite(ledB, LOW);
   digitalWrite(ledA, LOW);
-    
-    delay(temps);
-
+    }
+    if(comptador == 9);
+    {
   digitalWrite(ledA, LOW);    
   digitalWrite(ledB, LOW);    
   digitalWrite(ledF, LOW);
@@ -143,14 +147,13 @@ void loop()
   digitalWrite(ledC, LOW);
   digitalWrite(ledD, HIGH);
   digitalWrite(ledE, HIGH);
-
-    delay(temps);
-  }
-  else
+    }
+    if(comptador == 10);
     {
-    delay(temps);
+    comptador = 0;
+    }
     
-  }
+  
 }
 
 //********** Funcions *************************************************************
