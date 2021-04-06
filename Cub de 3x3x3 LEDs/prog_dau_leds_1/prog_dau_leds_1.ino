@@ -9,8 +9,6 @@
 
 //********** Variables ************************************************************
 const int temps = 1000;
-
-
 const int led0 = 5;          // donar nom al pin 5 de l’Arduino
 const int led1 = 6;          // donar nom al pin 6 de l’Arduino
 const int led2 = 7;          // donar nom al pin 7 de l’Arduino
@@ -101,4 +99,4 @@ void loop()
   
 }
 
-//********** Funcions *************************************************************
+//********** Funcions ************************************************************
