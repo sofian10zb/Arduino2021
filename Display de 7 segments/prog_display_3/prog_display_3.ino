@@ -47,7 +47,7 @@ void loop()
 
   {
     comptador = comptador + 1;
-    delay(500);
+    delay(300);
   }
     switch (comptador)
     {
