@@ -47,9 +47,11 @@ void loop()
 
   {
     comptador = comptador + 1;
+    delay(500);
   }
-    if (comptador == 0);
+    switch (comptador)
     {
+      case 0:
   digitalWrite(ledA, LOW);    
   digitalWrite(ledF, LOW);    
   digitalWrite(ledE, LOW);
@@ -57,9 +59,8 @@ void loop()
   digitalWrite(ledD, LOW);
   digitalWrite(ledB, LOW);
   digitalWrite(ledG, HIGH);
-    }
-    if(comptador == 1);
-    {
+  break;
+      case 1:
   digitalWrite(ledA, HIGH);    
   digitalWrite(ledF, HIGH);    
   digitalWrite(ledE, HIGH);
@@ -67,9 +68,8 @@ void loop()
   digitalWrite(ledD, HIGH);
   digitalWrite(ledB, LOW);
   digitalWrite(ledG, HIGH);
-    }
-    if(comptador == 2);
-    {
+  break;
+      case 2:
   digitalWrite(ledA, LOW);    
   digitalWrite(ledB, LOW);    
   digitalWrite(ledG, LOW);
@@ -77,9 +77,8 @@ void loop()
   digitalWrite(ledD, LOW);
   digitalWrite(ledC, HIGH);
   digitalWrite(ledF, HIGH);
-    }
-    if(comptador == 3);
-    {
+  break;
+      case 3:
   digitalWrite(ledA, LOW);    
   digitalWrite(ledB, LOW);    
   digitalWrite(ledC, LOW);
@@ -87,9 +86,8 @@ void loop()
   digitalWrite(ledD, LOW);
   digitalWrite(ledF, HIGH);
   digitalWrite(ledE, HIGH);
-    }
-    if(comptador == 4);
-    {
+  break;
+      case 4:
   digitalWrite(ledF, LOW);    
   digitalWrite(ledB, LOW);    
   digitalWrite(ledG, LOW);
@@ -97,9 +95,8 @@ void loop()
   digitalWrite(ledA, HIGH);
   digitalWrite(ledE, HIGH);
   digitalWrite(ledD, HIGH);
-    }
-    if(comptador == 5);
-    {
+  break;
+       case 5:
   digitalWrite(ledA, LOW);    
   digitalWrite(ledF, LOW);    
   digitalWrite(ledG, LOW);
@@ -107,9 +104,8 @@ void loop()
   digitalWrite(ledD, LOW);
   digitalWrite(ledB, HIGH);
   digitalWrite(ledE, HIGH);
-    }
-    if(comptador == 6);
-    {
+  break;
+        case 6:
   digitalWrite(ledF, LOW);    
   digitalWrite(ledG, LOW);    
   digitalWrite(ledE, LOW);
@@ -117,9 +113,8 @@ void loop()
   digitalWrite(ledD, LOW);
   digitalWrite(ledB, HIGH);
   digitalWrite(ledA, HIGH);
-    }
-    if(comptador == 7);
-    {
+  break;
+        case 7:
   digitalWrite(ledA, LOW);    
   digitalWrite(ledB, LOW);    
   digitalWrite(ledC, LOW);
@@ -127,9 +122,8 @@ void loop()
   digitalWrite(ledE, HIGH);
   digitalWrite(ledG, HIGH);
   digitalWrite(ledD, HIGH);
-    }
-    if(comptador == 8);
-    {
+  break;
+        case 8:
   digitalWrite(ledF, LOW);    
   digitalWrite(ledG, LOW);    
   digitalWrite(ledE, LOW);
@@ -137,9 +131,8 @@ void loop()
   digitalWrite(ledD, LOW);
   digitalWrite(ledB, LOW);
   digitalWrite(ledA, LOW);
-    }
-    if(comptador == 9);
-    {
+  break;
+        case 9:
   digitalWrite(ledA, LOW);    
   digitalWrite(ledB, LOW);    
   digitalWrite(ledF, LOW);
@@ -147,11 +140,16 @@ void loop()
   digitalWrite(ledC, LOW);
   digitalWrite(ledD, HIGH);
   digitalWrite(ledE, HIGH);
+  break;
+  default:
+  comptador = 0;
+  break;
+
+                                                            
     }
-    if(comptador == 10);
-    {
-    comptador = 0;
-    }
+  
+ 
+  
     
   
 }
