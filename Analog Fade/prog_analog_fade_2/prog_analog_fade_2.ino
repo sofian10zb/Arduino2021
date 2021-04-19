@@ -9,7 +9,7 @@ const int led2 = 6;          // donar nom al pin 6 de l’Arduino
 const int led3 = 9;          // donar nom al pin 9 de l’Arduino
 const int led4 = 10;         // donar nom al pin 10 de l’Arduino
 const int led5 = 11;         // donar nom al pin 11 de l’Arduino
-int velocitat = 1000;         // velocitat de l'acció en ms
+int velocitat = 500;         // velocitat de l'acció en ms
 
 //********** Setup ****************************************************************
 void setup()
